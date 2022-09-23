@@ -4,23 +4,30 @@ using namespace std;
 
 int main() {
   /*
-    Matematiksel Operatörler
-      +,-,*,/
+  int x;
+  cout << "Bir sayi giriniz: ";
+  cin >> x;
+  cout << "Girdiğiniz sayı = " << x;
   */
 
-  int sayi1 = 10;
-  int sayi2 = 4;
+  /*
+  int a, b, c;
+  cout << "Birinci sayi: " << endl;
+  cin >> a;
+  cout << "İkinci sayi sayi: " << endl;
+  cin >> b;
+  cout << "Üçüncü sayi sayi: " << endl;
+  cin >> c;
 
-  cout << "Toplama: " << sayi1 + sayi2 << endl;
-  cout << "Çıkartma: " << sayi1 - sayi2 << endl;
-  cout << "Çarpma:" << sayi1 * sayi2 << endl;
-  cout << "Bölme: " << sayi1 / sayi2 << endl;
+  cout << "Toplamları: " << a + b + c;
+  */
 
-  int a = 5;
-  a = a + 2;
-  cout << a << endl;
-  a += 2;
-  cout << a << endl;
-
+  /*
+  int a, b, c;
+  cout << "3 adet sayi giriniz" << endl;
+  cin >> a >> b >> c;
+  cout << "Toplamları: " << a + b + c;
+  */
+  
   return 0;
 }
