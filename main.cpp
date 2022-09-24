@@ -3,45 +3,21 @@
 using namespace std;
 
 int main() {
-  int a, b;
-  string islem;
+  string bys_username = "mustafa_murat";
+  string bys_password = "123456";
 
-  cout << "Hesap makinesi programına hoş geldiniz.\n";
-  cout << "1. işlem = Toplama (a + b = c)\n";
-  cout << "2. işlem = Çıkartma (a - b = c)\n";
-  cout << "3. işlem = Çarpma (a * b = c)\n";
-  cout << "4. işlem = Bölme (a / b = c)\n";
+  string username, password;
 
-  cout << "İşlemi giriniz: 1/2/3/4\n";
-  cin >> islem;
+  cout << "Kullanıcı adı ve parolanızı giriniz.\n";
+  cout << "Kullanıcı adı: ";
+  cin >> username;
+  cout << "Parola: ";
+  cin >> password;
 
-  if (islem == "1") {
-    cout << "a: ";
-    cin >> a;
-    cout << "b: ";
-    cin >> b;
-    cout << "a + b = " << a + b;
-  }
-  if (islem == "2") {
-    cout << "a: ";
-    cin >> a;
-    cout << "b: ";
-    cin >> b;
-    cout << "a - b = " << a - b;
-  }
-  if (islem == "3") {
-    cout << "a: ";
-    cin >> a;
-    cout << "b: ";
-    cin >> b;
-    cout << "a * b = " << a * b;
-  }
-  if (islem == "4") {
-    cout << "a: ";
-    cin >> a;
-    cout << "b: ";
-    cin >> b;
-    cout << "a / b = " << a / b;
+  if (bys_username == username && bys_password == password) {
+    cout << "Hoş geldiniz";
+  } else if (bys_username != username && bys_password == password) {
+    cout << "Kullanıcı adı Hatalı şifre doğru";
   }
 
   return 0;
