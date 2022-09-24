@@ -3,28 +3,41 @@
 using namespace std;
 
 int main() {
+  /*
+  int array[3];
+
+  array[0] = 10;
+  array[1] = 20;
+  array[2] = 30;
+
+  cout << "0. index: " << array[0] << endl;
+  cout << "1. index: " << array[1] << endl;
+  cout << "2. index: " << array[2] << endl;
+  */
+
+  // int array[] = {10,20,30,40};
 
   /*
-  int i = 0;
-  while (i < 10) {
-    if (i == 5) {
-      break;
-    }
-    cout << "i: " << i << endl;
-    i++;
+  double array2[] = {1.2, 3.5, 4.6, 7.6};
+
+  for (int i = 0; i < 4; i++) {
+    cout << i << ".ci indeks değeri: " << array2[i] << endl;
   }
   */
 
-  
-  for (int i = 0; i < 10; i++) {
-    if (i == 3 || i == 5 || i == 7) {
-      continue;
-    }
-    cout << "i: " << i << endl;
-  }
-  
+  /*
+  string array[4];
 
-  
+  for (int i = 0; i < 4; i++) {
+    cin >> array[i];
+  }
+
+  for (int i = 0; i < 4; i++) {
+    cout << i << ".ci index degeri: " << array[i] << endl;
+  }
+  */
+
+  int matris[3][3] = {{1,2,3},{4,5,6},{7,8,9}};
 
   return 0;
 }
