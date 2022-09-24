@@ -3,41 +3,25 @@
 using namespace std;
 
 int main() {
-  /*
-  int array[3];
+  int islem;
+  cout << "işlemi giriniz: ";
+  cin >> islem;
 
-  array[0] = 10;
-  array[1] = 20;
-  array[2] = 30;
-
-  cout << "0. index: " << array[0] << endl;
-  cout << "1. index: " << array[1] << endl;
-  cout << "2. index: " << array[2] << endl;
-  */
-
-  // int array[] = {10,20,30,40};
-
-  /*
-  double array2[] = {1.2, 3.5, 4.6, 7.6};
-
-  for (int i = 0; i < 4; i++) {
-    cout << i << ".ci indeks değeri: " << array2[i] << endl;
+  switch (islem) {
+  case 1:
+    cout << "1.işlemi seçtiniz" << endl;
+    break;
+  case 2:
+    cout << "2.işlemi seçtiniz" << endl;
+    break;
+  case 3:
+    cout << "3.işlemi seçtiniz" << endl;
+    break;
+  case 4:
+    cout << "4.işlemi seçtiniz" << endl;
+    break;
+  default:
+    cout << "1-2-3-4 den birini seçin";
   }
-  */
-
-  /*
-  string array[4];
-
-  for (int i = 0; i < 4; i++) {
-    cin >> array[i];
-  }
-
-  for (int i = 0; i < 4; i++) {
-    cout << i << ".ci index degeri: " << array[i] << endl;
-  }
-  */
-
-  int matris[3][3] = {{1,2,3},{4,5,6},{7,8,9}};
-
   return 0;
 }
