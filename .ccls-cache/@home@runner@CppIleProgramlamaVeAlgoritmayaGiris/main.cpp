@@ -3,31 +3,20 @@
 using namespace std;
 
 int main() {
-  /*
-  int x;
-  cout << "Bir sayi giriniz: ";
-  cin >> x;
-  cout << "Girdiğiniz sayı = " << x;
-  */
+  string str1 = "Bu bir stringdir\n";
+  string str2 = "bu da bir sitring\n";
+  cout << str1 + str2;
 
-  /*
-  int a, b, c;
-  cout << "Birinci sayi: " << endl;
-  cin >> a;
-  cout << "İkinci sayi sayi: " << endl;
-  cin >> b;
-  cout << "Üçüncü sayi sayi: " << endl;
-  cin >> c;
+  string password = "yazilim";
+  string input;
+  cout << "Lütfen parolayı girin" << endl;
+  cin >> input;
 
-  cout << "Toplamları: " << a + b + c;
-  */
+  if (password == input) {
+    cout << "Parola doğru";
+  } else {
+    cout << "Parola Yanlış";
+  }
 
-  /*
-  int a, b, c;
-  cout << "3 adet sayi giriniz" << endl;
-  cin >> a >> b >> c;
-  cout << "Toplamları: " << a + b + c;
-  */
-  
   return 0;
 }
