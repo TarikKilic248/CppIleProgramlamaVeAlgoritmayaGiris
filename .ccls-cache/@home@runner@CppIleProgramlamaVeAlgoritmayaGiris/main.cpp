@@ -2,12 +2,15 @@
 
 using namespace std;
 
-int main() {
-  int a[] = {10, 20, 30, 40, 50};
-  //foreach döngüsü
-  for (int item : a) {
-    cout << item << endl;
-  }
+void selamla() { cout << "Merhaba" << endl; }
+void selamla(string name) { cout << "Mehaba" << name << endl; }
+void selamla(string name1,string name2){
+  cout<<"Merhaba"<<name1<<","<<" "<<name2<<endl;
+}
 
+int main() {
+  selamla();
+  selamla("Mustafa");
+  selamla("Mustafa","Oğuz");
   return 0;
 }
