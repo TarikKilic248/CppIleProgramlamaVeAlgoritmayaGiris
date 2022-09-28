@@ -1,20 +1,14 @@
+#include "Employee.h"
 #include <iostream>
-
 using namespace std;
 
-class Student {
-public:
-  string name;
-  void tellName() { cout << "Benim adım: " << name << endl; }
-};
-
 int main() {
-  Student student1;
-  Student student2;
-  student1.name = "Mustafa Murat";
-  student2.name = "Oğuz";
-  student1.tellName();
-  student2.tellName();
+  Employee employee;
+  employee.id = 12;
+  employee.name = "Mustafa Murat";
+  employee.salary = 3000;
+
+  employee.showInfos();
 
   return 0;
 }
