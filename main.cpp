@@ -1,14 +1,19 @@
-#include "Employee.h"
 #include <iostream>
 using namespace std;
 
+class Employee {
+private:
+  string name;
+
+public:
+  void setName(string isim) { name = isim; }
+  string getName() { return name; }
+};
+
 int main() {
   Employee employee;
-  employee.id = 12;
-  employee.name = "Mustafa Murat";
-  employee.salary = 3000;
-
-  employee.showInfos();
+  employee.setName("Mustafa Murat");
+  cout << employee.getName() << endl;
 
   return 0;
 }
