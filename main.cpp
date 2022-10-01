@@ -1,22 +1,14 @@
 #include <iostream>
 using namespace std;
 
-class Gamer {
+class Matematik {
 public:
-  static int gamers;
-  Gamer() {
-    gamers++;
-    cout << "Yeni oyuncu oluşturuldu." << endl;
-  }
+  static void cube(int x) { cout << x * x * x << endl; }
+  static void add2(int x) { cout << x + 2 << endl; }
 };
 
-int Gamer::gamers = 0;
-
 int main() {
-  Gamer gamer1;
-  Gamer gamer2;
-  Gamer gamer3;
-  Gamer gamer4;
-  cout << Gamer::gamers << endl;
+  Matematik::cube(3);
+  Matematik::add2(20);
   return 0;
 }
